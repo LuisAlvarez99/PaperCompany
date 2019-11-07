@@ -6,20 +6,20 @@ body {
 nav {
 display: grid;
 grid-template-rows: 40px;
-grid-template-columns: 50% 16.66% 16.66% 16.66%;
+grid-template-columns: 25% 25% 25% 25%;
+grid-template-areas: ". . pic .";
 background-color: black;
 color: white;
 }
 
 nav div {
-  text-align: center;
-  display: flex;
+  padding-top: 3.5%;
 }
-nav div a {
-  text-decoration: none;
+nav div:nth-child(1) {
+  grid-area: pic;
 }
 
-nav div img {
-  height: 40px;
-  width: 30px;
+nav img {
+  height: 25px;
+  width: auto;
 }
