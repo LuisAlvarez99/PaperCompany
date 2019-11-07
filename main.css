@@ -6,17 +6,19 @@ body {
 nav {
 display: grid;
 grid-template-rows: 40px;
-grid-template-columns: 25% 25% 25% 25%;
-grid-template-areas: ". . pic .";
+grid-template-columns: 10% 60% 15% 15%;
+grid-template-areas: ". pic sites contact ";
 background-color: black;
 color: white;
+justify-items:center;
 }
 
 nav div {
-  padding-top: 3.5%;
+  padding-top: 8%;
 }
 nav div:nth-child(1) {
   grid-area: pic;
+  padding: .8%;
 }
 
 nav img {
