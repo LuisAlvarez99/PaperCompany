@@ -1,20 +1,26 @@
 body {
   margin: 0;
-  background-image: url('https://i.pinimg.com/originals/fc/ec/1f/fcec1f167e1a454be1024b8e57928ace.jpg');
+  background-image: linear-gradient(#53A138,#7E5533);
+  /* background-image: url('https://i.pinimg.com/originals/fc/ec/1f/fcec1f167e1a454be1024b8e57928ace.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: scroll; */
 }
 
-header {
+#top-box {
   font-size: 3em;
   text-align: center;
+  height: auto;
 }
 
-header h1 {
+#top-box h1 {
   margin: 0;
 }
 
+#top-box img {
+  width: 200px;
+  height: auto;
+}
 nav {
   display: grid;
   width: 100%;
@@ -42,10 +48,9 @@ nav img {
 #mission {
   display: grid;
   grid-template: auto / 20% 60% 20%;
-  margin-top: 2.8%;
   height: 100vh;
   width: auto;
-  box-shadow: 0 5px 20px green;
+  box-shadow: 0px 10px 6px -2px #53A138 inset;
 }
 
 #mission .left-side {
@@ -74,10 +79,10 @@ nav img {
 #mission .left-side::after {
   content: "";
   background-color: #5A3920;
-  opacity: 0.6;
-  top: 230px;
+  opacity: 0.9;
+  top: 140px;
   left: 0px;
-  bottom: -330px;
+  bottom: -140px;
   right: 1179px;
   position: absolute;
   z-index: -1;
@@ -86,10 +91,10 @@ nav img {
 #mission section::after {
     content: "";
     background-color: #7E5533;
-    opacity: 0.67;
-    top: 230px;
+    opacity: 0.9;
+    top: 140px;
     left: 260px;
-    bottom: -330px;
+    bottom: -140px;
     right: 287px;
     position: absolute;
     z-index: -1;
@@ -98,10 +103,10 @@ nav img {
 #mission aside::after {
     content: "";
     background-color: #9D6B41;
-    opacity: 0.6;
-    top: 230px;
-    left: 1149px;
-    bottom: -235px;
+    opacity: 0.9;
+    top: 140px;
+    left: 1153px;
+    bottom: -140px;
     right: 0px;
     position: absolute;
     z-index: -1;
@@ -109,6 +114,7 @@ nav img {
 
 .story-grid img {
   width: 100%;
+  border-radius: 20%;
   height: auto;
 }
 
@@ -133,18 +139,20 @@ nav img {
 }
 
 #team {
+  background-color: #7E5533;
   display: grid;
   grid-template: auto / repeat(3,33%);
   grid-row-gap: 10px;
   padding-top: 1.8%;
   justify-items: center;
-  box-shadow: 0px -3px 20px black inset;
+  box-shadow: 0px 10px 6px -2px #53A138 inset;
 }
 
 #team section {
 }
 
 #team img {
-  width: 200px;
-  height: auto;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
 }
