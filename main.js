@@ -1,7 +1,7 @@
 console.log('this is working')
 
-let mission = document.getElementById('mission')
+let feed = document.getElementById('feed')
 
-mission.addEventListener('click', function() {
-  alert('you clicked this!')
+feed.addEventListener('click', function() {
+  console.log('you clicked this!')
 })
