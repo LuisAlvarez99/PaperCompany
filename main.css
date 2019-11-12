@@ -183,7 +183,7 @@ nav img {
   opacity: 0.9;
   top: 25%;
   left: 0;
-  bottom: -30%;
+  bottom: -35%;
   right: 80%;
   position: absolute;
   z-index: -1;
@@ -195,7 +195,7 @@ nav img {
     opacity: 0.9;
     top: 25%;
     left: 20%;
-    bottom: -30%;
+    bottom: -35%;
     right: 20%;
     position: absolute;
     z-index: -1;
@@ -207,7 +207,7 @@ nav img {
     opacity: 0.9;
     top: 25%;
     left: 80%;
-    bottom: -30%;
+    bottom: -35%;
     right: 0px;
     position: absolute;
     z-index: -1;
@@ -264,6 +264,7 @@ article {
   background-color: #7E5533;
 }
 article h1 {
+  text-align: center;
   margin: 0;
 }
 article h4 {
@@ -271,7 +272,7 @@ article h4 {
 }
 article img {
   width: 50%;
-  margin-left: 18%;
+  margin-left: 25%;
   height: auto;
 }
 
@@ -280,7 +281,7 @@ footer {
   text-align: center;
   display: grid;
   grid-template: repeat(3, 33%) / repeat(5, 20%);
-  grid-template-areas: "logo . . . media" ". list1 list2 list3 ." "copyright copyright copyright copyright copyright"
+  grid-template-areas: "logo . . media media" ". list1 list2 list3 ." "copyright copyright copyright copyright copyright"
 }
 
 #footLogo {
@@ -290,15 +291,24 @@ footer {
 
 footer .list1 {
   grid-area: list1;
+  list-style: none;
+  text-align: left;
+  padding: 0;
 }
 footer .list2 {
   grid-area: list2;
+  list-style: none;
+  text-align: left;
+  padding: 0;
 }
 footer .list3 {
   grid-area: list3;
+  list-style: none;
+  text-align: left;
+  padding: 0;
 }
 
-footer div {
+footer div img{
   filter: grayscale(100%);
   grid-area: media;
   width: 30%;
