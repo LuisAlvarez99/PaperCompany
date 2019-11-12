@@ -83,7 +83,6 @@ nav img {
 
 
 #feed section {
-  overflow-x: scroll;
   overflow-y: scroll;
   text-align: center;
   padding-left: 10px;
@@ -105,18 +104,21 @@ nav img {
 }
 
 .story-grid img {
-  width: 100%;
+  margin-top: 15%;
+  width: 80%;
   border-radius: 20%;
   height: auto;
 }
 
 .story-grid p {
   grid-area: info;
-  font-size: 35px;
+  font-size: 30px;
   margin-top: 0;
 }
 .story-grid h3 {
   padding-top: 7%;
+  padding-left: 20%;
+  font-size: .8em;
   text-align: left;
   margin: 0;
 }
@@ -138,13 +140,15 @@ nav img {
 
 .global-grid p {
   margin-top: 0;
-  font-size: 35px;
+  font-size: 30px;
   grid-area: info;
 }
 .global-grid h3 {
   margin: 0;
+  padding-top: 7%;
+  padding-left: 10%;
   text-align: left;
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .busi-grid {
@@ -164,7 +168,7 @@ nav img {
   content: "";
   background-color: #5A3920;
   opacity: 0.9;
-  top: 20%;
+  top: 25%;
   left: 0;
   bottom: -30%;
   right: 80%;
@@ -176,10 +180,10 @@ nav img {
     content: "";
     background-color: #7E5533;
     opacity: 0.9;
-    top: 20%;
+    top: 25%;
     left: 20%;
     bottom: -30%;
-    right: 287px;
+    right: 20%;
     position: absolute;
     z-index: -1;
 }
@@ -188,7 +192,7 @@ nav img {
     content: "";
     background-color: #9D6B41;
     opacity: 0.9;
-    top: 20%;
+    top: 25%;
     left: 80%;
     bottom: -30%;
     right: 0px;
@@ -247,14 +251,35 @@ article img {
 footer {
   background-color: #9D6B41;
   text-align: center;
+  display: grid;
+  grid-template: repeat(3, 33%) / repeat(5, 20%);
+  grid-template-areas: "logo . . . media" ". list1 list2 list3 ." "copyright copyright copyright copyright copyright"
 }
 
-footer p {
-  margin: 0;
+#footLogo {
+  grid-area: logo;
+  width: 100%;
 }
-footer img {
+
+footer .list1 {
+  grid-area: list1;
+}
+footer .list2 {
+  grid-area: list2;
+}
+footer .list3 {
+  grid-area: list3;
+}
+
+footer div img {
   filter: grayscale(100%);
-  width: 5%;
+  grid-area: media;
+  width: 30%;
   height: auto;
   border-radius: 50%;
+}
+footer p {
+  margin: 0;
+  padding-top: 1%;
+  grid-area: copyright;
 }
